@@ -332,107 +332,207 @@
   <script>
         // Bộ câu hỏi Tin học lớp 5 - Kết nối tri thức
         const questions = [
-            {
-                question: "Phần mềm Microsoft Word dùng để làm gì?",
-                answers: {
-                    A: "Soạn thảo văn bản",
-                    B: "Vẽ hình",
-                    C: "Tính toán",
-                    D: "Lướt web"
-                },
-                correct: "A"
-            },
-            {
-                question: "Trong máy tính, bộ phận nào dùng để lưu trữ dữ liệu lâu dài?",
-                answers: {
-                    A: "CPU",
-                    B: "RAM", 
-                    C: "Ổ cứng",
-                    D: "Chuột"
-                },
-                correct: "C"
-            },
-            {
-                question: "Để mở một tập tin trong Windows, ta thường:",
-                answers: {
-                    A: "Nhấp chuột phải",
-                    B: "Nhấp đúp chuột trái",
-                    C: "Nhấn phím Enter",
-                    D: "Nhấn phím Space"
-                },
-                correct: "B"
-            },
-            {
-                question: "Internet là gì?",
-                answers: {
-                    A: "Một phần mềm",
-                    B: "Một thiết bị phần cứng",
-                    C: "Mạng máy tính toàn cầu",
-                    D: "Một trò chơi"
-                },
-                correct: "C"
-            },
-            {
-                question: "Phím tắt Ctrl + C dùng để:",
-                answers: {
-                    A: "Dán",
-                    B: "Sao chép",
-                    C: "Cắt",
-                    D: "Lưu"
-                },
-                correct: "B"
-            },
-            {
-                question: "Đuôi file .docx thuộc về phần mềm nào?",
-                answers: {
-                    A: "Paint",
-                    B: "Calculator",
-                    C: "Microsoft Word",
-                    D: "Notepad"
-                },
-                correct: "C"
-            },
-            {
-                question: "Để tạo thư mục mới trong Windows, ta:",
-                answers: {
-                    A: "Nhấp chuột phải → New → Folder",
-                    B: "Nhấn phím F1",
-                    C: "Nhấn Ctrl + N",
-                    D: "Nhấp đúp chuột"
-                },
-                correct: "A"
-            },
-            {
-                question: "Phần mềm nào dùng để vẽ và tô màu đơn giản?",
-                answers: {
-                    A: "Microsoft Word",
-                    B: "Paint",
-                    C: "Calculator",
-                    D: "Notepad"
-                },
-                correct: "B"
-            },
-            {
-                question: "RAM trong máy tính có tác dụng gì?",
-                answers: {
-                    A: "Lưu trữ dữ liệu vĩnh viễn",
-                    B: "Xử lý dữ liệu",
-                    C: "Lưu trữ dữ liệu tạm thời",
-                    D: "Hiển thị hình ảnh"
-                },
-                correct: "C"
-            },
-            {
-                question: "Để thoát khỏi một chương trình, ta thường nhấn:",
-                answers: {
-                    A: "Alt + F4",
-                    B: "Ctrl + S",
-                    C: "Ctrl + C",
-                    D: "F1"
-                },
-                correct: "A"
-            }
-        ];
+  {
+    question: "Máy tính là gì?",
+    answers: {
+      A: "Một loại sách điện tử.",
+      B: "Một thiết bị giúp con người xử lý thông tin nhanh chóng.",
+      C: "Một loại bút đặc biệt.",
+      D: "Một cuốn từ điển."
+    },
+    correct: "B"
+  },
+  {
+    question: "Khi sử dụng mạng Internet, để tìm thông tin học tập, em nên làm gì?",
+    answers: {
+      A: "Gõ ngẫu nhiên từ khóa và chọn bất kỳ trang nào hiện ra.",
+      B: "Gõ từ khóa liên quan đến chủ đề và chọn trang tin cậy.",
+      C: "Chỉ tìm qua mạng xã hội mà không kiểm tra nguồn.",
+      D: "Không cần lọc thông tin, cứ sao chép tất cả."
+    },
+    correct: "B"
+  },
+  {
+    question: "Thư mục (folder) dùng để làm gì trong máy tính?",
+    answers: {
+      A: "Để chơi game.",
+      B: "Để lưu trữ và tổ chức các tệp tin cho gọn gàng.",
+      C: "Để truyền hình trực tiếp.",
+      D: "Để viết thư tay."
+    },
+    correct: "B"
+  },
+  {
+    question: "Nội dung sau đây thuộc bản quyền nội dung thông tin là gì?",
+    answers: {
+      A: "Một bài hát do em sáng tác nhưng không ghi tên tác giả.",
+      B: "Một hình ảnh tải về từ internet nhưng ghi rõ nguồn.",
+      C: "Một bài báo chia sẻ miễn phí không ghi tên tác giả và không xin phép.",
+      D: "Khi sử dụng thông tin, em luôn ghi rõ tên tác giả và nguồn."
+    },
+    correct: "D"
+  },
+  {
+    question: "Khi soạn thảo văn bản, để làm nổi bật tiêu đề, em nên làm gì?",
+    answers: {
+      A: "Giữ nguyên định dạng mặc định.",
+      B: "Tăng cỡ chữ, chọn màu, đặt tiêu đề ở giữa trang.",
+      C: "Xoay văn bản 90 độ.",
+      D: "Viết hoa toàn bộ và không xuống dòng."
+    },
+    correct: "B"
+  },
+  {
+    question: "Trong phần mềm đồ họa đơn giản, em có thể làm gì?",
+    answers: {
+      A: "Tạo hình ảnh, vẽ minh họa, chèn màu sắc.",
+      B: "Gõ văn bản thuần túy mà không chèn hình.",
+      C: "Chỉ nghe nhạc mà không vẽ gì cả.",
+      D: "In ấn trực tiếp mà không lưu file."
+    },
+    correct: "A"
+  },
+  {
+    question: "Cấu trúc tuần tự trong lập trình là gì?",
+    answers: {
+      A: "Khi các lệnh được thực hiện theo thứ tự từ trên xuống dưới.",
+      B: "Khi máy tính quyết định ngẫu nhiên thứ tự thực hiện.",
+      C: "Khi chỉ có một lệnh duy nhất.",
+      D: "Khi không có lệnh nào được thực hiện."
+    },
+    correct: "A"
+  },
+  {
+    question: "Cấu trúc lặp (loop) dùng để làm gì?",
+    answers: {
+      A: "Thực hiện lệnh một lần rồi dừng.",
+      B: "Thực hiện một nhóm lệnh nhiều lần cho tới khi đạt điều kiện.",
+      C: "Thực hiện ngẫu nhiên các lệnh không kiểm soát.",
+      D: "Không dùng trong lập trình."
+    },
+    correct: "B"
+  },
+  {
+    question: "Cấu trúc rẽ nhánh (if…else) dùng để làm gì?",
+    answers: {
+      A: "Cho chương trình lặp lại vĩnh viễn.",
+      B: "Cho chương trình chọn giữa hai hoặc nhiều đường đi dựa trên điều kiện.",
+      C: "Dành riêng cho trò chơi máy tính.",
+      D: "Là một loại thư mục đặc biệt."
+    },
+    correct: "B"
+  },
+  {
+    question: "Biến (variable) trong lập trình là gì?",
+    answers: {
+      A: "Một con số cố định không thay đổi.",
+      B: "Giá trị có thể thay đổi trong chương trình, được đặt tên.",
+      C: "Một loại thư mục máy tính.",
+      D: "Một phần mềm đồ họa."
+    },
+    correct: "B"
+  },
+  {
+    question: "Thiết bị nào sau đây thường không được xem là thành phần của hệ thống máy tính cá nhân?",
+    answers: {
+      A: "Bộ xử lý trung tâm (CPU)",
+      B: "Màn hình hiển thị",
+      C: "Máy in phun màu",
+      D: "Bàn chải đánh răng"
+    },
+    correct: "D"
+  },
+  {
+    question: "Khi em muốn lưu hình ảnh mà mình vừa vẽ vào máy tính, em nên chọn thao tác nào?",
+    answers: {
+      A: "Gõ tắt Ctrl + P",
+      B: "Chọn “Lưu” hoặc “Save” trong chương trình",
+      C: "Tắt máy tính ngay lập tức",
+      D: "Cắm thêm USB để sạc máy tính"
+    },
+    correct: "B"
+  },
+  {
+    question: "Trong chủ đề “Mạng máy tính và Internet”, việc nào sau đây là an toàn khi em tìm kiếm thông tin?",
+    answers: {
+      A: "Nhấp vào mọi đường link mà không đọc nội dung",
+      B: "Chia sẻ thông tin cá nhân lên mạng không kiểm soát",
+      C: "Chỉ vào những trang web tin cậy và có nguồn rõ ràng",
+      D: "Tắt chương trình diệt virus để vào mạng nhanh hơn"
+    },
+    correct: "C"
+  },
+  {
+    question: "Khi lưu trữ nhiều file trong máy tính, việc tạo thư mục (folder) có tác dụng gì?",
+    answers: {
+      A: "Làm máy tính chạy chậm hơn",
+      B: "Giúp sắp xếp và dễ tìm kiếm file hơn",
+      C: "Khóa máy tính không cho ai dùng",
+      D: "Tự xóa các file cũ"
+    },
+    correct: "B"
+  },
+  {
+    question: "Cây thư mục là cách thể hiện cấu trúc lưu trữ như thế nào?",
+    answers: {
+      A: "Mọi file đều nằm trong một thư mục duy nhất",
+      B: "Thư mục chỉ chứa một file không thể chứa thư mục khác",
+      C: "Có nhiều thư mục con nằm trong thư mục lớn, giống như nhánh cây",
+      D: "Thư mục chỉ dùng để chơi game"
+    },
+    correct: "C"
+  },
+  {
+    question: "Về bản quyền nội dung thông tin, điều nào sau đây là đúng?",
+    answers: {
+      A: "Em có thể sao chép và dùng hình ảnh mà không cần ghi nguồn nếu trang web cho phép tải",
+      B: "Em luôn nên ghi rõ tên tác giả và nguồn khi sử dụng thông tin từ mạng",
+      C: "Bản quyền chỉ áp dụng với phần mềm chứ không với hình ảnh",
+      D: "Việc sử dụng trái phép không ảnh hưởng gì tới người khác"
+    },
+    correct: "B"
+  },
+  {
+    question: "Khi soạn thảo văn bản, để định dạng kí tự như in đậm, nghiêng, màu sắc…, em cần thực hiện thao tác nào?",
+    answers: {
+      A: "Chọn phần kí tự muốn định dạng, sau đó chọn công cụ tương ứng (Bold, Italic, Color…)",
+      B: "Viết toàn văn bản bằng bút và rồi scan lại",
+      C: "Không cần chọn gì, chương trình tự định dạng",
+      D: "Chỉ dùng phím Esc để bật định dạng tự động"
+    },
+    correct: "A"
+  },
+  {
+    question: "Trong phần mềm soạn thảo văn bản, để đặt hình ảnh đẹp ở vị trí giữa trang, em nên:",
+    answers: {
+      A: "Chèn hình ảnh, chọn căn giữa và nếu cần thay đổi kích thước",
+      B: "Viết chữ lên hình rồi lưu dưới dạng hình ảnh",
+      C: "Không chèn hình ảnh, chỉ dùng chữ",
+      D: "Chèn hình rồi in mà không xem vị trí"
+    },
+    correct: "A"
+  },
+  {
+    question: "Khi em sử dụng phần mềm đồ họa đơn giản để vẽ một sản phẩm số (ví dụ tranh kỹ thuật số), em có thể:",
+    answers: {
+      A: "Vẽ các đối tượng, chọn màu, xóa và sửa lại cho tới khi hài lòng",
+      B: "Chỉ dùng phím gõ chữ không thể vẽ",
+      C: "Không lưu lại tác phẩm vì không quan trọng",
+      D: "In ngay mà không xem lại bản nháp"
+    },
+    correct: "A"
+  },
+  {
+    question: "Cấu trúc tuần tự trong lập trình có nghĩa là:",
+    answers: {
+      A: "Các lệnh được thực hiện lần lượt từ đầu đến cuối như đã lập kế hoạch",
+      B: "Các lệnh bị thực hiện ngẫu nhiên",
+      C: "Một lệnh duy nhất rồi dừng",
+      D: "Các lệnh không được thực hiện vì thiếu biến"
+    },
+    correct: "A"
+  }
+];
 
         // Biến trạng thái trò chơi
         let currentQuestionIndex = 0;
